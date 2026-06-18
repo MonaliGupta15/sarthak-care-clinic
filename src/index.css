@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@keyframes drawECG {
+  from {
+    stroke-dashoffset: 800;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
