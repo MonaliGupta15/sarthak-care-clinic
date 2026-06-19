@@ -81,20 +81,20 @@ const reviews = [
 
 const Review = () => {
   return (
-    <section id="reviews" className="py-8 bg-gradient-to-b from-white to-cyan-50">
+    <section id="reviews" className="py-12 bg-gradient-to-b from-white to-cyan-50">
       <div className="max-w-7xl mx-auto px-[6vw]">
 
-        <h2 className="text-5xl font-bold text-center text-gray-800 mb-4">
+        <h2 className="text-3xl lg:text-4xl font-bold text-center text-slate-800 mb-2">
           What Our Patients Say
         </h2>
 
-        <p className="text-center text-xl text-gray-600 mb-16">
+        <p className="text-center text-sm text-gray-600 mb-8">
           Excellence in Healthcare, Reflected Through Patient Experiences        
         </p>
 
         <Swiper
           modules={[Autoplay, Pagination]}
-          spaceBetween={30}
+          spaceBetween={20}
           loop={true}
           autoplay={{
             delay: 3500,
@@ -114,41 +114,43 @@ const Review = () => {
               slidesPerView: 3,
             },
           }}
+          className="pb-10"
         >
           {reviews.map((item, index) => (
-            <SwiperSlide key={index}>
-              <div className="bg-white rounded-3xl border border-cyan-50 p-8 shadow-lg hover:-translate-y-2 hover:border-cyan-200 hover:shadow-2xl transition-all duration-300">
-
+            <SwiperSlide key={index} className="flex h-auto">
+              <div className="bg-white rounded-2xl border border-slate-100 p-5 shadow-md hover:-translate-y-1 hover:border-cyan-200 hover:shadow-xl transition-all duration-300 w-full h-[260px] flex flex-col">
                 <div>
-                  <div className="flex items-start justify-between mb-5">
+                  <div className="flex items-start justify-between gap-3 mb-4">
 
-                      <div className="flex items-center gap-3">
+                      <div className="flex items-center gap-2.5">
                         <img
                           src={item.image}
                           alt={item.name}
-                          className="w-16 h-16 rounded-full object-cover border-2 border-cyan-100"
+                          className="w-11 h-11 rounded-full object-cover border border-cyan-50 shadow-sm"
                         />
 
                         <div>
-                          <h3 className="font-semibold text-slate-800">
+                          <h3 className="font-bold text-sm text-slate-800 leading-snug">
                             {item.name}
                           </h3>
 
-                          <p className="text-xs text-gray-500">
+                          <p className="text-[10px] text-gray-400">
                             Verified Patient
                           </p>
                         </div>
                       </div>
 
-                      <div className="text-yellow-400 text-lg tracking-wide">
+                      <div className="text-yellow-400 text-xs tracking-wider shrink-0 mt-1">
                         ⭐⭐⭐⭐⭐
                       </div>
 
                     </div>
-                    <div className="text-cyan-500 text-5xl font-serif leading-none mb-3"> ❝ </div>
-                      <p className="text-gray-600 leading-relaxed line-clamp-6 mt-4">
+                    <div className="text-cyan-400 text-3xl font-serif leading-none"> ❝ </div>
+                    <div className="mt-2 h-[90px] overflow-y-auto pr-2">
+                        <p className="text-gray-500 text-xs leading-relaxed">
                           "{item.review}"
-                      </p>
+                        </p>
+                    </div>
                 </div>
               </div>
             </SwiperSlide>
