@@ -1,16 +1,5 @@
-# React + Vite
+Sarthak Care Clinic is a modern and responsive healthcare website built with React and Tailwind CSS. The website has been redesigned with a clean user experience, compact layout, and healthcare-focused visuals to provide patients with easy access to essential information.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Features include an interactive hero section, specialist doctor profiles, healthcare services, patient testimonials, clinic location with Google Maps integration, responsive navigation, and mobile-friendly design. The website focuses on accessibility, professional presentation, and seamless user interaction while maintaining a modern healthcare aesthetic.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Tech Stack: React, Tailwind CSS, Swiper.js, React Icons, Framer Motion (planned), and Google Maps Embed.
